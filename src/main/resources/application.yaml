@@ -2,14 +2,14 @@ server:
   port: 8081
 spring:
   application:
-    name: hmdp
+    name: profile
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/hmdp?useSSL=false&serverTimezone=UTC
     username: root
     password: lzx990404
   redis:
-    host: 127.0.0.1
+    host: localhost
     port: 6379
     password: 123321
     lettuce:
@@ -25,3 +25,5 @@ mybatis-plus:
 logging:
   level:
     com.hmdp: debug
+  pattern:
+    dateformat: mm:ss.SSS
