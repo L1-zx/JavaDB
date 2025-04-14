@@ -1,9 +1,7 @@
-package com.profile;
+package com.l1zx;
 
-import com.profile.entity.Shop;
-import com.profile.service.impl.ShopServiceImpl;
-import com.profile.utils.CacheClient;
-import com.profile.utils.RedisIdWorker;
+import com.l1zx.utils.CacheClient;
+import com.l1zx.utils.RedisIdWorker;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.geo.Point;
@@ -20,11 +18,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static com.profile.utils.RedisConstants.CACHE_SHOP_KEY;
-import static com.profile.utils.RedisConstants.SHOP_GEO_KEY;
+import static com.l1zx.utils.RedisConstants.CACHE_SHOP_KEY;
+import static com.l1zx.utils.RedisConstants.SHOP_GEO_KEY;
 
 @SpringBootTest
-class ProfileApplicationTests {
+class MyProjectApplicationTests {
 
     @Resource
     private CacheClient cacheClient;
